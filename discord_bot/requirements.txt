@@ -1,0 +1,7 @@
+discord.py
+SQLAlchemy
+qrcode
+psycopg2-binary
+alembic
+python-dotenv
+Pillow
