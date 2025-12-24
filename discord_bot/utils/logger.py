@@ -2,7 +2,7 @@
 
 import discord
 from discord.ext import commands
-from database.models import GuildConfig
+from ..database.models import GuildConfig
 from sqlalchemy.orm import Session
 
 

@@ -3,9 +3,9 @@
 import discord
 from discord.ext import commands
 from sqlalchemy.orm import Session
-from database.database import get_db
-from database.models import User
-from utils.db_session import db_session_decorator
+from ..database.database import get_db
+from ..database.models import User
+from ..utils.db_session import db_session_decorator
 
 
 class ProfileCog(commands.Cog):

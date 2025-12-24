@@ -3,10 +3,10 @@
 import discord
 from discord import app_commands
 from discord.ext import commands
-from database.database import get_db
-from database.models import GuildConfig
+from ..database.database import get_db
+from ..database.models import GuildConfig
 from sqlalchemy.orm import Session
-from views.config_view import ConfigView
+from ..views.config_view import ConfigView
 
 
 class ConfigCog(commands.Cog):

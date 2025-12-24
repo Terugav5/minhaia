@@ -4,10 +4,10 @@ import discord
 from discord import app_commands
 from discord.ext import commands
 from sqlalchemy.orm import Session
-from database.database import get_db
-from database.models import Mediator, GuildConfig, User
-from utils.db_session import db_session_decorator
-from utils.modal_db_decorator import modal_db_session_decorator
+from ..database.database import get_db
+from ..database.models import Mediator, GuildConfig, User
+from ..utils.db_session import db_session_decorator
+from ..utils.modal_db_decorator import modal_db_session_decorator
 
 
 class PixModal(discord.ui.Modal, title="Registrar Chave PIX"):

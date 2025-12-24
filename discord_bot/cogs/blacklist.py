@@ -4,12 +4,12 @@ import discord
 from discord import app_commands
 from discord.ext import commands
 from sqlalchemy.orm import Session
-from database.database import get_db
+from ..database.database import get_db
 import discord
-from database.models import Blacklist, GuildConfig, User
-from utils.db_session import db_session_decorator
-from utils.modal_db_decorator import modal_db_session_decorator
-from utils.logger import log_action
+from ..database.models import Blacklist, GuildConfig, User
+from ..utils.db_session import db_session_decorator
+from ..utils.modal_db_decorator import modal_db_session_decorator
+from ..utils.logger import log_action
 
 
 class BlacklistModal(discord.ui.Modal, title="Adicionar Usuário à Blacklist"):

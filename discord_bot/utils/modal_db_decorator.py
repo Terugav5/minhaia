@@ -2,7 +2,7 @@
 
 from functools import wraps
 from sqlalchemy.orm import Session
-from database.database import get_db
+from ..database.database import get_db
 
 def modal_db_session_decorator(on_submit_method):
     """

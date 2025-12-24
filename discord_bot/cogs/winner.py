@@ -4,9 +4,9 @@ import discord
 from discord import app_commands
 from discord.ext import commands
 from sqlalchemy.orm import Session
-from database.database import get_db
-from database.models import User, GuildConfig
-from utils.db_session import db_session_decorator
+from ..database.database import get_db
+from ..database.models import User, GuildConfig
+from ..utils.db_session import db_session_decorator
 
 
 class WinnerCog(commands.Cog):

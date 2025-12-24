@@ -3,8 +3,8 @@
 import discord
 from discord.ext import commands
 from sqlalchemy.orm import Session
-from database.database import get_db
-from database.models import Queue, QueuePlayer, User, Match, MatchTeamPlayer
+from ..database.database import get_db
+from ..database.models import Queue, QueuePlayer, User, Match, MatchTeamPlayer
 import asyncio
 
 

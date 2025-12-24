@@ -4,10 +4,10 @@ import discord
 from discord import app_commands
 from discord.ext import commands
 from sqlalchemy.orm import Session
-from database.database import get_db
-from database.models import GuildConfig, Price, EmbedConfig, Queue
-from views.queue_view import QueueView
-from utils.modal_db_decorator import modal_db_session_decorator
+from ..database.database import get_db
+from ..database.models import GuildConfig, Price, EmbedConfig, Queue
+from ..views.queue_view import QueueView
+from ..utils.modal_db_decorator import modal_db_session_decorator
 
 
 class QueueModal(discord.ui.Modal, title="Criar Filas"):

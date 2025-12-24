@@ -48,6 +48,21 @@ class GuildConfig(Base):
     # Canal do painel de mediadores
     mediator_panel_channel_id = Column(BigInteger, nullable=True)
 
+    # Configurações de Ticket
+    ticket_category_id = Column(BigInteger, nullable=True)
+    ticket_channel_id = Column(BigInteger, nullable=True)
+
+    # Canal de Ranking
+    ranking_channel_id = Column(BigInteger, nullable=True)
+
+
+class TicketOption(Base):
+    """Modelo para as opções do select menu de tickets."""
+    __tablename__ = "ticket_options"
+    id = Column(Integer, primary_key=True, index=True)
+    guild_id = Column(BigInteger, ForeignKey("guild_configs.guild_id"), nullable=False)
+    label = Column(String, nullable=False)
+    description = Column(String, nullable=True)
 
 class Match(Base):
     """Modelo para armazenar informações sobre as partidas."""
